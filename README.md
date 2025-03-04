@@ -5,28 +5,67 @@
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18-green.svg)](https://nodejs.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A high-tech, cyberpunk-themed CLI resume with stunning visual effects and animations running directly in your terminal. This interactive resume presents professional information with a futuristic cyberpunk aesthetic, complete with matrix effects, glitch animations, and an immersive interface.
+A high-tech, cyberpunk-themed CLI resume generator with stunning visual effects and animations running directly in your terminal.
 
 ![Cyberpunk Resume Demo](https://raw.githubusercontent.com/ashish-bagdane/cli-resume/main/demo.gif)
 
 ## 📋 Table of Contents
 
+- [Create Your Own Resume](#-create-your-own-resume)
 - [Quick Start](#-quick-start)
 - [Features](#-features)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Project Structure](#-project-structure)
 - [Customization](#-customization)
 - [Terminal Compatibility](#-terminal-compatibility)
 - [Performance Tips](#-performance-tips)
 - [Troubleshooting](#-troubleshooting)
 - [Technical Implementation](#-technical-implementation)
 - [Contributing](#-contributing)
-- [FAQ](#-faq)
-- [Changelog](#-changelog)
-- [Requirements](#-requirements)
-- [Credits](#-credits)
 - [License](#-license)
+
+## 🔨 Create Your Own Resume
+
+You can easily create your own cyberpunk resume with our generator:
+
+```bash
+# Use npx to run the generator (no installation required)
+npx ashish-bagdane
+
+# Or install the generator globally
+npm install -g ashish-bagdane
+
+# Then run
+ashish-bagdane
+```
+
+The generator will guide you through:
+
+1. Basic information (name, title, location)
+2. Contact details (LinkedIn, website)
+3. Professional summary
+4. Work experience
+5. Skills and expertise
+6. Education
+7. Color customization (optional)
+
+Then it will:
+
+1. Create a new directory with your complete resume project
+2. Set up all necessary files and structure
+3. Configure it as an npm package ready for publishing
+
+Once generated, you can:
+
+1. Test your resume with `npm start`
+2. Customize further if needed
+3. Publish to npm (optional) with `npm publish`
+
+After publishing, anyone can view your resume by running:
+
+```bash
+npx your-package-name
+```
 
 ## 🚀 Quick Start
 
