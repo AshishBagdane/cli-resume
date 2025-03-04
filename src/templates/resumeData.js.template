@@ -1,0 +1,57 @@
+// Resume data
+export const resumeData = {
+  name: "{{name}}",
+  title: "{{title}}",
+  location: "{{location}}",
+  contact: {
+    linkedin: "{{linkedin}}",
+    portfolio: "{{website}}",
+  },
+  summary: "{{summary}}",
+  expertise: [
+    {{#expertise}}
+    {
+      category: "{{category}}",
+      skills: [
+        {{#skills}}
+        "{{.}}",
+        {{/skills}}
+      ],
+    },
+    {{/expertise}}
+  ],
+  experience: [
+    {{#experience}}
+    {
+      role: "{{role}}",
+      company: "{{company}}",
+      period: "{{period}}",
+      highlights: [
+        {{#highlights}}
+        "{{.}}",
+        {{/highlights}}
+      ],
+    },
+    {{/experience}}
+  ],
+  education: [
+    {{#education}}
+    {
+      degree: "{{degree}}",
+      institution: "{{institution}}",
+      year: "{{year}}",
+    },
+    {{/education}}
+  ],
+  certifications: [
+    "Certification 1",
+    "Certification 2",
+    "Certification 3",
+  ],
+  achievements: [
+    "Achievement 1",
+    "Achievement 2",
+  ],
+};
+
+export default resumeData;

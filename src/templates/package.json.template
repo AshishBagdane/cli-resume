@@ -1,0 +1,50 @@
+{
+    "name": "{{packageName}}",
+    "version": "1.0.0",
+    "description": "{{description}}",
+    "main": "src/app.js",
+    "type": "module",
+    "bin": {
+      "{{packageName}}": "./bin/cli.js"
+    },
+    "scripts": {
+      "start": "node bin/cli.js",
+      "dev": "node bin/cli.js --dev",
+      "fast": "node bin/cli.js --fast",
+      "minimal": "node bin/cli.js --minimal",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "resume",
+      "cli",
+      "npx",
+      "cyberpunk",
+      "animated",
+      "interactive",
+      "terminal",
+      "matrix"
+    ],
+    "author": "{{authorName}}",
+    "license": "MIT",
+    "dependencies": {
+      "boxen": "^8.0.1",
+      "chalk": "^5.4.1",
+      "cli-spinners": "^2.9.2",
+      "commander": "^11.0.0",
+      "figlet": "^1.8.0",
+      "gradient-string": "^2.0.2",
+      "ora": "^8.0.1",
+      "term-size": "^3.0.2"
+    },
+    "engines": {
+      "node": ">=18"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/{{githubUsername}}/{{packageName}}.git"
+    },
+    "bugs": {
+      "url": "https://github.com/{{githubUsername}}/{{packageName}}/issues"
+    },
+    "homepage": "https://github.com/{{githubUsername}}/{{packageName}}#readme"
+  }

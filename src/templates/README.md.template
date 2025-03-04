@@ -1,0 +1,89 @@
+# Cyberpunk CLI Resume - {{fullName}}
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18-green.svg)](https://nodejs.org/)
+
+A high-tech, cyberpunk-themed CLI resume with stunning visual effects and animations running directly in your terminal.
+
+## Quick Start
+
+```bash
+# Run via npx (no installation required)
+npx {{packageName}}
+
+# For faster animations
+npx {{packageName}} --fast
+
+# For low-resource environments
+npx {{packageName}} --minimal
+```
+
+## Features
+
+- ⚡ Matrix-style rain animation intro
+- 💻 Animated ASCII name display
+- 🔷 Typewriter text effects
+- 🌈 Gradient color schemes and custom Unicode characters
+- 🎭 Glitch text effects
+- 🚀 Dynamic loading animations
+
+## Installation
+
+### Using npx (recommended)
+
+The easiest way to view this resume is by using npx:
+
+```bash
+npx {{packageName}}
+```
+
+### Installing globally
+
+```bash
+npm install -g {{packageName}}
+```
+
+Then run:
+
+```bash
+{{packageName}}
+```
+
+### Command-line options
+
+```bash
+# Run with normal animations
+{{packageName}}
+
+# Run with faster animations
+{{packageName}} --fast
+
+# Run with minimal animations (for low-resource environments)
+{{packageName}} --minimal
+
+# Skip the matrix rain animation
+{{packageName}} --noMatrix
+```
+
+## Requirements
+
+- Node.js ≥ 18
+- Terminal with ANSI color support
+- Monospaced font for best display
+
+## Terminal Compatibility
+
+For the best experience, use one of these terminals:
+
+- iTerm2 (macOS) - Best overall experience
+- Windows Terminal (Windows) - Excellent support
+- Hyper (Cross-platform) - Great compatibility
+
+## Credits
+
+- Based on the [cyberpunk-cli-resume](https://github.com/ashish-bagdane/cli-resume) project
+- Created using the `create-cyberpunk-resume` generator
+
+## License
+
+MIT License
