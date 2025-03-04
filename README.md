@@ -1,131 +1,166 @@
-# // [PREMIUM] CYBERPUNK CLI RESUME
+# Cyberpunk CLI Resume
 
-A cutting-edge animated CLI resume with immersive cyberpunk aesthetics, featuring matrix rain animations, dynamic text effects, and responsive terminal design.
+A high-tech, cyberpunk-themed CLI resume with stunning visual effects and animations running directly in your terminal. This interactive resume presents professional information with a futuristic cyberpunk aesthetic, complete with matrix effects, glitch animations, and an immersive interface.
 
-![Cyberpunk CLI Resume Preview](/api/placeholder/800/400)
+![Cyberpunk Resume Demo](https://raw.githubusercontent.com/ashish-bagdane/cli-resume/master/demo.gif)
 
-## // SYSTEM_OVERVIEW
+## Features
 
-This is not just a resume—it's an _experience_. Showcasing your professional profile through an immersive cyberpunk-styled terminal interface with advanced animations, this CLI resume makes a lasting impression on technical recruiters and fellow developers.
+- ⚡ Matrix-style rain animation intro
+- 💻 Animated ASCII name display
+- 🔷 Typewriter text effects
+- 🌈 Gradient color schemes and custom Unicode characters
+- 🖼️ Perfectly centered boxes with cyberpunk borders
+- 🎭 Glitch text effects
+- 🚀 Dynamic loading animations
+- ⏱️ Multiple speed modes (normal, fast, minimal)
+- 📱 Responsive to terminal size
 
-The resume automatically centers content based on terminal size, creating a visually balanced presentation on any terminal window.
+## Installation
 
-## // FEATURE_MATRIX
+### Using npx (recommended)
 
-- **Advanced Animation Suite:**
-
-  - Matrix-style rain effect introduction
-  - Character-by-character decoding text reveals
-  - Glitch effects and simulated system boot
-  - Typewriter animations with cursor effects
-  - Scanning beam text transitions
-  - Pulsing elements for emphasis
-
-- **Responsive Design:**
-
-  - Dynamically centers all content based on terminal dimensions
-  - Adjusts layout for optimal viewing on any screen size
-  - Ensures consistent visual presentation
-
-- **Premium Visual Design:**
-
-  - Electric blue accents against matte black background
-  - Carefully crafted color gradients for section headers
-  - Unicode icons for enhanced visual appeal ⚡✧⟡✵⎔★
-  - Custom-designed cyberpunk-inspired borders and connector lines
-  - Visual hierarchy with vertical connectors and animated bullet points
-
-- **Interactive Experience:**
-  - Simulated system boot sequence
-  - Custom spinners and loading animations
-  - Progress indicators for each section
-  - "Wait for input" prompt at conclusion
-
-## // EXECUTION_COMMAND
-
-Anyone can view your resume by running:
+The easiest way to view this resume is by using npx:
 
 ```bash
 npx ashish-bagdane
 ```
 
-No installation required! The package runs directly through NPX.
-
-## // DEVELOPER_DOCUMENTATION
-
-### System Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Terminal with ANSI color support
-
-### Dependency Matrix
-
-| Package           | Purpose                                          |
-| ----------------- | ------------------------------------------------ |
-| `chalk`           | Terminal string styling with RGB/HEX colors      |
-| `boxen`           | Creating bordered boxes in the terminal          |
-| `figlet`          | ASCII art text generation                        |
-| `gradient-string` | Color gradients in terminal text                 |
-| `ora`             | Elegant terminal spinners                        |
-| `cli-spinners`    | Collection of spinner animations                 |
-| `term-size`       | Detect terminal dimensions for responsive layout |
-
-### Local Development Instructions
+### Installing globally
 
 ```bash
-# Clone repository
-git clone https://github.com/ashish-bagdane/cyberpunk-resume.git
+npm install -g ashish-bagdane
+```
 
-# Navigate to project
-cd cyberpunk-resume
+Then run:
+
+```bash
+ashish-bagdane
+```
+
+### Local installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ashish-bagdane/cli-resume.git
+
+# Navigate to the project directory
+cd cli-resume
 
 # Install dependencies
 npm install
 
-# Test locally
+# Run the resume
 npm start
 ```
 
-### Customization Options
+## Usage
 
-1. **Content Configuration:**
-
-   - Edit the `resumeData` object in `index.js` to contain your information
-   - Customize section order by rearranging the code blocks
-
-2. **Visual Styling:**
-
-   - Modify the color scheme by changing the hex values in the color variables
-   - Adjust animation timing by modifying sleep durations
-   - Customize spinner styles by selecting different options from cli-spinners
-
-3. **Animation Control:**
-   - Enable/disable specific animations in the main function
-   - Adjust animation speed by modifying sleep values
-   - Create new animation patterns by combining existing techniques
-
-## // PUBLISHING_PROTOCOL
+### Command-line options
 
 ```bash
-# Login to npm
-npm login
+# Run with normal animations
+ashish-bagdane
 
-# Publish your package
-npm publish
+# Run with faster animations
+ashish-bagdane --fast
+
+# Run with minimal animations (for low-resource environments)
+ashish-bagdane --minimal
+
+# Skip the matrix rain animation
+ashish-bagdane --noMatrix
+
+# Run in development mode with debug information
+ashish-bagdane --dev
 ```
 
-## // KNOWN_LIMITATIONS
+## Project Structure
 
-- Some terminals may not support all Unicode characters
-- Windows Command Prompt has limited color support
-- Very small terminal windows may cause layout issues
-- Animation performance may vary on older hardware
+The project is organized into modular components for better maintainability:
 
-## // LICENSE
+```
+cyberpunk-resume/
+├── bin/
+│   └── cli.js              # CLI entry point
+├── src/
+│   ├── config/
+│   │   ├── theme.js        # Colors, icons, borders
+│   │   └── resumeData.js   # Resume data
+│   ├── utils/
+│   │   └── helpers.js      # Utility functions
+│   ├── animations/
+│   │   ├── index.js        # Exports all animations
+│   │   ├── boot.js         # Boot sequence animations
+│   │   ├── matrix.js       # Matrix rain effect
+│   │   ├── text.js         # Text animations (typewriter, glitch)
+│   │   └── box.js          # Box animations
+│   ├── components/
+│   │   ├── index.js        # Exports all components
+│   │   ├── header.js       # Header/name display
+│   │   ├── contact.js      # Contact information
+│   │   ├── profile.js      # Profile summary
+│   │   ├── skills.js       # Technical skills
+│   │   ├── experience.js   # Work experience
+│   │   ├── education.js    # Education
+│   │   └── footer.js       # Footer component
+│   └── app.js              # Main application logic
+├── package.json
+└── README.md
+```
 
-MIT
+## Customization
 
----
+### Creating your own CLI resume
 
-_Designed with ⚡ by Ashish Bagdane_
+1. Fork this repository
+2. Update `src/config/resumeData.js` with your personal information
+3. Modify the theme in `src/config/theme.js` to change colors, icons, or borders
+4. Customize animations or components as needed
+5. Update the package.json with your information
+6. Publish to npm (optional)
+
+### Display Options
+
+Adjust any of the following in the theme configuration:
+
+- Color schemes
+- Border styles
+- Icons
+- Animation speeds
+- Text formatting
+
+## Technical Implementation
+
+This project uses:
+
+- **chalk**: Terminal string styling
+- **boxen**: Create boxes in the terminal
+- **figlet**: ASCII art from text
+- **gradient-string**: Create color gradients in the terminal
+- **ora**: Elegant terminal spinners
+- **cli-spinners**: Collection of spinners for terminal
+- **term-size**: Reliably get terminal size
+- **commander**: Command-line interface
+
+### Animation Techniques
+
+- **Typewriter effect**: Character-by-character text reveal
+- **Box animations**: Line-by-line rendering of centered boxes
+- **Matrix rain**: Custom terminal position-based animation
+- **Section fade-in**: Spinner-based section introduction
+
+## Requirements
+
+- Node.js ≥ 18
+- Terminal with ANSI color support
+- Monospaced font for best display
+
+## Credits
+
+- Created by Ashish Bagdane
+- Inspired by cyberpunk aesthetics and terminal art
+
+## License
+
+MIT License - see LICENSE file for details.
