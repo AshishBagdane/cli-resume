@@ -1,0 +1,50 @@
+{
+  "name": "ashish-bagdane",
+  "version": "1.0.0",
+  "description": "Ashish Bagdane's Premium Cyberpunk CLI Resume with Advanced Animations",
+  "main": "src/app.js",
+  "type": "module",
+  "bin": {
+    "ashish-bagdane": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "dev": "node bin/cli.js --dev",
+    "fast": "node bin/cli.js --fast",
+    "minimal": "node bin/cli.js --minimal",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "resume",
+    "cli",
+    "npx",
+    "cyberpunk",
+    "animated",
+    "interactive",
+    "terminal",
+    "matrix"
+  ],
+  "author": "Ashish Bagdane",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "cli-spinners": "^2.9.2",
+    "commander": "^11.0.0",
+    "figlet": "^1.8.0",
+    "gradient-string": "^2.0.2",
+    "ora": "^8.0.1",
+    "term-size": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashish-bagdane/cli-resume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashish-bagdane/cli-resume/issues"
+  },
+  "homepage": "https://github.com/ashish-bagdane/cli-resume#readme"
+}
