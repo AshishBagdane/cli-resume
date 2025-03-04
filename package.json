@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "type": "module",
   "bin": {
-    "ashish-bagdane": "./bin/cli.js"
+    "ashish-bagdane": "./bin/cli.js",
+    "cli-resume": "./bin/generate.js"
   },
   "scripts": {
     "start": "node bin/cli.js",
@@ -32,9 +33,13 @@
     "cli-spinners": "^2.9.2",
     "commander": "^11.0.0",
     "figlet": "^1.8.0",
+    "fs-extra": "^11.3.0",
     "gradient-string": "^2.0.2",
+    "inquirer": "^12.4.2",
+    "mustache": "^4.2.0",
     "ora": "^8.0.1",
-    "term-size": "^3.0.2"
+    "term-size": "^3.0.2",
+    "validate-npm-package-name": "^6.0.0"
   },
   "engines": {
     "node": ">=18"
