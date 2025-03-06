@@ -1,6 +1,6 @@
 {
   "name": "ashish-bagdane",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ashish Bagdane's Premium Cyberpunk CLI Resume with Advanced Animations",
   "main": "src/app.js",
   "type": "module",
