@@ -16,7 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          path: .
           fetch-depth: 0
 
       - name: Use Node.js ${{ matrix.node-version }}
@@ -31,5 +30,6 @@ jobs:
         run: echo "NODE_ENV=production" >> $GITHUB_ENV
 
       - name: Build with Webpack
-        run: yarn webpack --config webpack.config.cjs --mode=production
+        run: yarn build
+
 
